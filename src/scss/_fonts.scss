@@ -4,8 +4,8 @@
   font-style: normal;
   font-display: swap;
 
-  src: url("../fonts/muller-regular.woff2") format("woff2"),
-    url("../fonts/muller-regular.woff") format("woff");
+  src: url("~@/assets/fonts/muller-regular.woff2") format("woff2"),
+    url("~@/assets/fonts/muller-regular.woff") format("woff");
 }
 
 @font-face {
@@ -14,8 +14,8 @@
   font-style: normal;
   font-display: swap;
 
-  src: url("../fonts/muller-bold.woff2") format("woff2"),
-    url("../fonts/muller-bold.woff") format("woff");
+  src: url("~@/assets/fonts/muller-bold.woff2") format("woff2"),
+    url("~@/assets/fonts/muller-bold.woff") format("woff");
 }
 
 @font-face {
@@ -24,6 +24,6 @@
   font-style: normal;
   font-display: swap;
 
-  src: url("../fonts/muller-light.woff2") format("woff2"),
-    url("../fonts/muller-light.woff") format("woff");
+  src: url("~@/assets/fonts/muller-light.woff2") format("woff2"),
+    url("~@/assets/fonts/muller-light.woff") format("woff");
 }

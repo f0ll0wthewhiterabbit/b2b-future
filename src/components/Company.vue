@@ -1,20 +1,43 @@
+<template>
+  <section class="company">
+    <h2 class="visually-hidden">Our company</h2>
+    <header class="company__header">
+      <Navigation />
+    </header>
+
+    <Logo class="company__logo" />
+  </section>
+</template>
+
+<script>
+import Navigation from '@/components/Navigation.vue'
+import Logo from '@/components/Logo.vue'
+
+export default {
+  components: {
+    Navigation,
+    Logo,
+  },
+}
+</script>
+
+<style scoped lang="scss">
 .company {
   position: relative;
 
   display: flex;
   flex-direction: column;
 
-  height: 150px; // Fixes ie11 vertical alignment bug
+  height: 150px; // Fixes IE11 vertical alignment bug
   min-height: 30vh;
 
   background-color: $accent;
-  background-image: url("../images/background-mobile.jpg");
+  background-image: url('../assets/images/background-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   justify-content: center;
-
 
   &__header {
     display: flex;
@@ -43,7 +66,7 @@
     height: auto;
     min-height: 100vh;
 
-    background-image: url("../images/background-tablet.jpg");
+    background-image: url('../assets/images/background-tablet.jpg');
 
     &__header {
       justify-content: flex-end;
@@ -69,6 +92,7 @@
   .company {
     width: calc(100% - #{$aside-width});
 
-    background-image: url("../images/background-desktop.jpg");
+    background-image: url('../assets/images/background-desktop.jpg');
   }
 }
+</style>

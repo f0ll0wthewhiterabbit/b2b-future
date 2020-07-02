@@ -1,3 +1,17 @@
+<template>
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <router-link to="/features" class="navigation__link">Our features</router-link>
+      </li>
+      <li class="navigation__item">
+        <router-link to="/help" class="navigation__link">Help</router-link>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+<style scoped lang="scss">
 .navigation {
   padding: 15px 30px;
   width: 100%;
@@ -17,7 +31,7 @@
   &__link {
     color: $font-contrast;
 
-    font-family: "MullerLight", sans-serif;
+    font-family: 'MullerLight', sans-serif;
     font-size: 15px;
     font-weight: normal;
     font-style: normal;
@@ -49,3 +63,4 @@
     }
   }
 }
+</style>

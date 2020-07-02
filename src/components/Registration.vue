@@ -1,3 +1,25 @@
+<template>
+  <aside class="registration">
+    <h1 class="registration__title">Register as vendor</h1>
+    <p class="registration__instruction">Please submit your registration details below</p>
+
+    <SignUpForm />
+
+    <router-link to="/" class="registration__link">Back to home</router-link>
+  </aside>
+</template>
+
+<script>
+import SignUpForm from '@/components/SignUpForm.vue'
+
+export default {
+  components: {
+    SignUpForm,
+  },
+}
+</script>
+
+<style scoped lang="scss">
 .registration {
   padding: 30px 25px;
 
@@ -8,7 +30,7 @@
   &__title {
     margin: 0 0 3px;
 
-    font-family: "Muller", sans-serif;
+    font-family: 'Muller', sans-serif;
     font-size: 26px;
     font-weight: bold;
     font-style: normal;
@@ -18,7 +40,7 @@
   &__instruction {
     margin: 0 0 40px;
 
-    font-family: "Muller", sans-serif;
+    font-family: 'Muller', sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -26,7 +48,7 @@
   }
 
   &__link {
-    font-family: "Muller", sans-serif;
+    font-family: 'Muller', sans-serif;
     font-size: 16px;
     font-weight: bold;
     font-style: normal;
@@ -71,3 +93,4 @@
     }
   }
 }
+</style>

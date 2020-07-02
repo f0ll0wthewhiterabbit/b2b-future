@@ -1,19 +1,29 @@
 # B2B Future
 
-## Usage
+## Project setup
 
-Run this to start development mode:
-
-```bash
-npm start
+```
+yarn install
 ```
 
-The source files are located in the `src/` folder. The destination version of the project is located in the `dist/` folder. To build a project without starting the development server, run:
+### Compiles and hot-reloads for development
 
-```bash
-npm run build
+```
+yarn serve
 ```
 
-## Requirements
+### Compiles and minifies for production
 
-Node.js version: 12.16.1
+```
+yarn build
+```
+
+### Lints and fixes files
+
+```
+yarn lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
