@@ -1,0 +1,45 @@
+.registration {
+  width: $aside-width;
+  min-height: 100vh;
+  padding: 44px 30px;
+
+  text-align: center;
+
+  background-color: $white;
+
+  &__title {
+    margin: 0 0 3px;
+
+    font-family: "Muller", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.2;
+  }
+
+  &__instruction {
+    margin: 0 0 51px;
+
+    font-family: "Muller", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2;
+  }
+
+  &__link {
+    font-family: "Muller", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.2;
+    color: $font-blue;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $accent;
+    }
+  }
+}

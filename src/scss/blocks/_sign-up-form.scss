@@ -1,0 +1,192 @@
+.sign-up-form {
+  &__field {
+    margin: 0 0 40px;
+    padding: 0;
+
+    text-align-last: left;
+
+    border: none;
+
+    &:first-of-type {
+      margin-bottom: 50px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 43px;
+    }
+  }
+
+  &__label {
+    display: block;
+
+    color: $font-light;
+
+    font-family: "MullerLight", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2;
+  }
+
+  &__select,
+  &__input {
+    width: 100%;
+    padding: 4px 0 1px;
+
+    transition: border-color 0.3s linear;
+
+    border: none;
+    border: 0;
+    border-bottom: 2px solid $light-grey;
+    outline: none;
+    background-color: transparent;
+    box-shadow: none;
+
+    font-family: "Muller", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.2;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+
+  &__input {
+    background-image: linear-gradient(to right, #23a5fc 0, #40f9fe 100%);
+    background-repeat: no-repeat;
+    background-position: center bottom -3px;
+    background-size: 100% 2px;
+
+    &--confirmed {
+      border-bottom-color: transparent;
+      background-image: linear-gradient(to right, #23a5fc 0, #40f9fe 100%), url("/images/icons/confirm.svg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: center bottom -3px, center right 8px;
+      background-size: 100% 2px, 12px, 9px;
+    }
+  }
+
+  &__select {
+    padding-right: 44px;
+
+    cursor: pointer;
+
+    background-image: linear-gradient(to right, #23a5fc 0, #40f9fe 100%), url("/images/icons/angle-down.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom -3px, center right 16px;
+    background-size: 100% 2px, 15px 8px;
+
+    appearance: none;
+  }
+
+  &__checkbox-label {
+    position: relative;
+
+    display: block;
+    display: flex;
+
+    min-height: 20px;
+    padding-left: 37px;
+
+    transition: all 0.3s ease;
+
+    color: $font-light;
+
+    font-family: "MullerLight", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2;
+
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      top: -1px;
+      left: 0;
+
+      width: 20px;
+      height: 20px;
+
+      content: "";
+      transition: all 0.3s ease;
+
+      border: 1px solid $font-light;
+      background-color: $white;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+
+      &::before {
+        border-color: $accent;
+      }
+    }
+  }
+
+  &__checkbox:checked+.sign-up-form__checkbox-label::after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    display: block;
+
+    width: 12px;
+    height: 9px;
+
+    content: "";
+
+    background-color: $white;
+
+    mask-image: url("/images/icons/confirm.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+
+  &__checkbox:checked+.sign-up-form__checkbox-label::before {
+    border-color: $accent;
+    background-color: $accent;
+  }
+
+  &__checkbox:focus+.sign-up-form__checkbox-label,
+  &__checkbox:hover+.sign-up-form__checkbox-label {
+    color: $accent;
+  }
+
+  &__checkbox:focus+.sign-up-form__checkbox-label::before {
+    color: $accent;
+    border-color: $accent;
+  }
+
+  &__submit {
+    margin-bottom: 18px;
+    padding: 16px 80px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+
+    color: $font-contrast;
+    border: none;
+    border-radius: 6px;
+    background-color: $accent;
+
+    font-family: "Muller", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.2;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $accent-light;
+    }
+  }
+}

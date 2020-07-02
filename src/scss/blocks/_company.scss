@@ -1,0 +1,28 @@
+.company {
+  position: relative;
+
+  width: calc(100% - #{$aside-width});
+  min-height: 100vh;
+
+  background-color: $accent;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__header {
+    display: flex;
+
+    justify-content: flex-end;
+  }
+
+  &__logo {
+    position: absolute;
+    top: calc(100vh / 2);
+    left: 50%;
+
+    display: block;
+
+    transform: translate(-50%, -50%);
+  }
+}

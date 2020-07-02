@@ -1,6 +1,11 @@
 @import "normalize";
 
+@import "variables";
 @import "fonts";
 @import "common";
 
 @import "blocks/page";
+@import "blocks/company";
+@import "blocks/navigation";
+@import "blocks/registration";
+@import "blocks/sign-up-form";

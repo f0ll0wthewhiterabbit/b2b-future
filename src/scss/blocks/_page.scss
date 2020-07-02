@@ -1,12 +1,20 @@
 .page {
+  position: relative;
+
   min-width: 320px;
 
-  color: #30333a;
-  background-color: #249adb;
+  color: $font-dark;
+  background-color: $accent;
 
-  font-family: 'Muller', sans-serif;
+  font-family: "Muller", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.2;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
 }
