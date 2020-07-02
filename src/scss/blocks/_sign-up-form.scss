@@ -3,7 +3,7 @@
     margin: 0 0 30px;
     padding: 0;
 
-    text-align-last: left;
+    text-align: left;
 
     border: none;
 
@@ -63,10 +63,14 @@
 
     &--confirmed {
       border-bottom-color: transparent;
-      background-image: linear-gradient(to right, #23a5fc 0, #40f9fe 100%), url("/images/icons/confirm.svg");
+      background-image: linear-gradient(to right, #23a5fc 0, #40f9fe 100%), url("../images/icons/confirm.svg");
       background-repeat: no-repeat, no-repeat;
       background-position: center bottom -3px, center right 8px;
       background-size: 100% 2px, 12px, 9px;
+    }
+
+    &::-ms-clear {
+      display: none;
     }
   }
 
@@ -75,12 +79,16 @@
 
     cursor: pointer;
 
-    background-image: linear-gradient(to right, #23a5fc 0, #40f9fe 100%), url("/images/icons/angle-down.svg");
+    background-image: linear-gradient(to right, #23a5fc 0, #40f9fe 100%), url("../images/icons/angle-down.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: center bottom -3px, center right 16px;
     background-size: 100% 2px, 15px 8px;
 
     appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
   }
 
   &__checkbox-label {
@@ -144,7 +152,7 @@
 
     background-color: $white;
 
-    mask-image: url("/images/icons/confirm.svg");
+    mask-image: url("../images/icons/confirm.svg");
     mask-position: center;
     mask-repeat: no-repeat;
   }

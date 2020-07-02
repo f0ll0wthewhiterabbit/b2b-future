@@ -34,7 +34,7 @@
 @media (min-width: $tablet-width) {
   .navigation {
     padding: 43px 65px;
-    max-width: auto;
+    max-width: none;
 
     &__list {
       justify-content: flex-end;
