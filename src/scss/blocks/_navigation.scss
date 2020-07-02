@@ -1,5 +1,7 @@
 .navigation {
-  padding: 43px 65px;
+  padding: 15px 30px;
+  width: 100%;
+  max-width: 500px;
 
   &__list {
     display: flex;
@@ -9,15 +11,7 @@
 
     list-style: none;
 
-    justify-content: flex-end;
-  }
-
-  &__item {
-    margin-right: 85px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    justify-content: space-around;
   }
 
   &__link {
@@ -33,6 +27,25 @@
     &:focus,
     &:active {
       font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    padding: 43px 65px;
+    max-width: auto;
+
+    &__list {
+      justify-content: flex-end;
+    }
+
+    &__item {
+      margin-right: 85px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }

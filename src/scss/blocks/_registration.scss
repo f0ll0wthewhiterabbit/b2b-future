@@ -1,7 +1,5 @@
 .registration {
-  width: $aside-width;
-  min-height: 100vh;
-  padding: 44px 30px;
+  padding: 30px 25px;
 
   text-align: center;
 
@@ -11,14 +9,14 @@
     margin: 0 0 3px;
 
     font-family: "Muller", sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
     font-style: normal;
     line-height: 1.2;
   }
 
   &__instruction {
-    margin: 0 0 51px;
+    margin: 0 0 40px;
 
     font-family: "Muller", sans-serif;
     font-size: 14px;
@@ -29,7 +27,7 @@
 
   &__link {
     font-family: "Muller", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     font-style: normal;
     line-height: 1.2;
@@ -40,6 +38,36 @@
     &:focus,
     &:active {
       color: $accent;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .registration {
+    padding: 44px 30px;
+    min-height: 100vh;
+    width: 40%;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__instruction {
+      margin-bottom: 51px;
+    }
+
+    &__link {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .registration {
+    width: $aside-width;
+
+    &__title {
+      font-size: 30px;
     }
   }
 }

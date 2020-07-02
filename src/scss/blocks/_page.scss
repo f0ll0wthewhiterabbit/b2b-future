@@ -11,10 +11,15 @@
   font-weight: normal;
   font-style: normal;
   line-height: 1.2;
+}
 
-  &__container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: stretch;
+@media (min-width: $tablet-width) {
+  .page {
+    &__container {
+      display: flex;
+
+      align-items: stretch;
+      justify-content: flex-end;
+    }
   }
 }
