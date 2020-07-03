@@ -75,9 +75,7 @@
   &__field {
     margin: 0 0 30px;
     padding: 0;
-
     text-align: left;
-
     border: none;
 
     &:first-of-type {
@@ -91,9 +89,7 @@
 
   &__label {
     display: block;
-
     color: $font-light;
-
     font-family: 'MullerLight', sans-serif;
     font-size: 12px;
     font-weight: normal;
@@ -105,16 +101,13 @@
   &__input {
     width: 100%;
     padding: 4px 0 1px;
-
     transition: border-color 0.3s linear;
-
     border: none;
     border: 0;
     border-bottom: 2px solid $light-grey;
     outline: none;
     background-color: transparent;
     box-shadow: none;
-
     font-family: 'Muller', sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -150,9 +143,7 @@
 
   &__select {
     padding-right: 44px;
-
     cursor: pointer;
-
     background-image: linear-gradient(to right, #23a5fc 0, #40f9fe 100%),
       url('../assets/images/icons/angle-down.svg');
     background-repeat: no-repeat, no-repeat;
@@ -168,36 +159,27 @@
 
   &__checkbox-label {
     position: relative;
-
     display: block;
     display: flex;
-
+    align-items: center;
     min-height: 20px;
     padding-left: 37px;
-
     transition: all 0.3s ease;
-
     color: $font-light;
-
     font-family: 'MullerLight', sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
     line-height: 1.2;
 
-    align-items: center;
-
     &::before {
       position: absolute;
       top: -1px;
       left: 0;
-
       width: 20px;
       height: 20px;
-
       content: '';
       transition: all 0.3s ease;
-
       border: 1px solid $font-light;
       background-color: $white;
     }
@@ -215,16 +197,12 @@
 
   &__checkbox:checked + .sign-up-form__checkbox-label::after {
     position: absolute;
-    top: 4px;
-    left: 4px;
-
+    top: 5px;
+    left: 5px;
     display: block;
-
     width: 12px;
     height: 9px;
-
     content: '';
-
     background-color: $white;
 
     mask-image: url('../assets/images/icons/confirm.svg');
@@ -250,16 +228,13 @@
   &__submit {
     margin-bottom: 18px;
     padding: 14px 60px;
-
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align: center;
-
     color: $font-contrast;
     border: none;
     border-radius: 6px;
     background-color: $accent;
-
     font-family: 'Muller', sans-serif;
     font-size: 16px;
     font-weight: bold;

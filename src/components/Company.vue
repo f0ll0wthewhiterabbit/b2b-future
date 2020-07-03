@@ -24,32 +24,28 @@ export default {
 <style scoped lang="scss">
 .company {
   position: relative;
-
   display: flex;
+  justify-content: center;
   flex-direction: column;
-
   height: 150px; // Fixes IE11 vertical alignment bug
   min-height: 30vh;
-
   background-color: $accent;
-  background-image: url('../assets/images/background-mobile.jpg');
+  background-image: url('../assets/images/sign-up-bg-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  justify-content: center;
-
   &__header {
     display: flex;
-
     justify-content: center;
+
     order: 2;
   }
 
   &__logo {
     display: flex;
-
     justify-content: center;
+
     order: 1;
 
     svg {
@@ -61,12 +57,10 @@ export default {
 @media (min-width: $tablet-width) {
   .company {
     display: block;
-
     width: 60%;
     height: auto;
     min-height: 100vh;
-
-    background-image: url('../assets/images/background-tablet.jpg');
+    background-image: url('../assets/images/sign-up-bg-tablet.jpg');
 
     &__header {
       justify-content: flex-end;
@@ -76,9 +70,7 @@ export default {
       position: absolute;
       top: calc(100vh / 2);
       left: 50%;
-
       display: block;
-
       transform: translate(-50%, -50%);
 
       svg {
@@ -91,8 +83,7 @@ export default {
 @media (min-width: $desktop-width) {
   .company {
     width: calc(100% - #{$aside-width});
-
-    background-image: url('../assets/images/background-desktop.jpg');
+    background-image: url('../assets/images/sign-up-bg-desktop.jpg');
   }
 }
 </style>

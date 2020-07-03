@@ -22,14 +22,11 @@ export default {
 <style scoped lang="scss">
 .registration {
   padding: 30px 25px;
-
   text-align: center;
-
   background-color: $white;
 
   &__title {
     margin: 0 0 3px;
-
     font-family: 'Muller', sans-serif;
     font-size: 26px;
     font-weight: bold;
@@ -39,7 +36,6 @@ export default {
 
   &__instruction {
     margin: 0 0 40px;
-
     font-family: 'Muller', sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -48,13 +44,13 @@ export default {
   }
 
   &__link {
+    transition: color 0.3s ease;
+    color: $font-blue;
     font-family: 'Muller', sans-serif;
     font-size: 16px;
     font-weight: bold;
     font-style: normal;
     line-height: 1.2;
-    color: $font-blue;
-    transition: color 0.3s ease;
 
     &:hover,
     &:focus,
@@ -66,9 +62,9 @@ export default {
 
 @media (min-width: $tablet-width) {
   .registration {
-    padding: 44px 30px;
-    min-height: 100vh;
     width: 40%;
+    min-height: 100vh;
+    padding: 44px 30px;
 
     &__title {
       font-size: 28px;

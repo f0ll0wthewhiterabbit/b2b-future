@@ -23,12 +23,9 @@ export default {
 <style scoped lang="scss">
 .sign-up-page {
   position: relative;
-
   min-width: 320px;
-
   color: $font-dark;
   background-color: $accent;
-
   font-family: 'Muller', sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -40,7 +37,6 @@ export default {
   .sign-up-page {
     &__container {
       display: flex;
-
       align-items: stretch;
       justify-content: flex-end;
     }

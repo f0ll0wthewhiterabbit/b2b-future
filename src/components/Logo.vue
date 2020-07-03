@@ -16,3 +16,25 @@
     </svg>
   </router-link>
 </template>
+
+<style scoped lang="scss">
+.logo {
+  text-align: center;
+
+  svg {
+    width: 70%;
+  }
+
+  image {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    svg {
+      width: 100%;
+    }
+  }
+}
+</style>
