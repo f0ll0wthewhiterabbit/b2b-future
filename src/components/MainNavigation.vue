@@ -3,7 +3,7 @@
     <ul class="navigation__list">
       <li
         :class="[
-          currentPage.includes('sign-up') ? 'navigation__item--disabled' : '',
+          currentPage.indexOf('sign-up') !== -1 ? 'navigation__item--disabled' : '',
           'navigation__item',
         ]"
       >
@@ -11,7 +11,7 @@
       </li>
       <li
         :class="[
-          currentPage.includes('features') ? 'navigation__item--disabled' : '',
+          currentPage.indexOf('features') !== -1 ? 'navigation__item--disabled' : '',
           'navigation__item',
         ]"
       >
@@ -19,7 +19,7 @@
       </li>
       <li
         :class="[
-          currentPage.includes('help') ? 'navigation__item--disabled' : '',
+          currentPage.indexOf('help') !== -1 ? 'navigation__item--disabled' : '',
           'navigation__item',
         ]"
       >
