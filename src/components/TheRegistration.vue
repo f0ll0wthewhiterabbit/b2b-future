@@ -3,18 +3,19 @@
     <h1 class="registration__title">Register as vendor</h1>
     <p class="registration__instruction">Please submit your registration details below</p>
 
-    <SignUpForm />
+    <TheSignUpForm />
 
     <router-link to="/" class="registration__link">Back to home</router-link>
   </aside>
 </template>
 
 <script>
-import SignUpForm from '@/components/SignUpForm.vue'
+import TheSignUpForm from '@/components/TheSignUpForm.vue'
 
 export default {
+  name: 'TheRegistration',
   components: {
-    SignUpForm,
+    TheSignUpForm,
   },
 }
 </script>

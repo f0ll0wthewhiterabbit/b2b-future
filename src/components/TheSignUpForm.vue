@@ -200,6 +200,7 @@
 import { required, email, sameAs } from 'vuelidate/lib/validators'
 
 export default {
+  name: 'TheSignUpForm',
   data() {
     return {
       country: '',

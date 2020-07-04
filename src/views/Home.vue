@@ -1,5 +1,5 @@
 <template>
-  <Page class="page--home home-page">
+  <PageLayout class="page--home home-page">
     <h1 class="home-page__heading">Home Page</h1>
 
     <p class="home-page__about" v-if="name && email">
@@ -14,15 +14,16 @@
       </p>
       <router-link to="/sign-up" class="home-page__link">Sign Up</router-link>
     </template>
-  </Page>
+  </PageLayout>
 </template>
 
 <script>
-import Page from '@/layouts/Page.vue'
+import PageLayout from '@/layouts/PageLayout.vue'
 
 export default {
+  name: 'Home',
   components: {
-    Page,
+    PageLayout,
   },
   data() {
     return {

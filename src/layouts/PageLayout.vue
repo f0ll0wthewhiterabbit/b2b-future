@@ -1,8 +1,8 @@
 <template>
   <div class="page">
     <header class="page__header">
-      <Logo />
-      <Navigation />
+      <BaseLogo />
+      <MainNavigation />
     </header>
 
     <main class="page__main">
@@ -12,13 +12,14 @@
 </template>
 
 <script>
-import Navigation from '@/components/Navigation.vue'
-import Logo from '@/components/Logo.vue'
+import MainNavigation from '@/components/MainNavigation.vue'
+import BaseLogo from '@/components/BaseLogo.vue'
 
 export default {
+  name: 'PageLayout',
   components: {
-    Navigation,
-    Logo,
+    MainNavigation,
+    BaseLogo,
   },
 }
 </script>

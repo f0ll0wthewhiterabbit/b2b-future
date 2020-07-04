@@ -31,6 +31,7 @@
 
 <script>
 export default {
+  name: 'MainNavigation',
   computed: {
     currentPage() {
       return this.$route.path

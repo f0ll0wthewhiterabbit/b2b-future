@@ -1,21 +1,22 @@
 <template>
   <div class="sign-up-page">
     <div class="sign-up-page__container">
-      <Company />
+      <TheCompany />
 
-      <Registration />
+      <TheRegistration />
     </div>
   </div>
 </template>
 
 <script>
-import Registration from '@/components/Registration.vue'
-import Company from '@/components/Company.vue'
+import TheRegistration from '@/components/TheRegistration.vue'
+import TheCompany from '@/components/TheCompany.vue'
 
 export default {
+  name: 'SignUp',
   components: {
-    Registration,
-    Company,
+    TheRegistration,
+    TheCompany,
   },
 }
 </script>

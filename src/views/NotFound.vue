@@ -1,16 +1,17 @@
 <template>
-  <Page class="page--not-found not-found-page">
+  <PageLayout class="page--not-found not-found-page">
     <h1 class="not-found-page__heading">404</h1>
     <p class="not-found-page__about">Page Not Found</p>
-  </Page>
+  </PageLayout>
 </template>
 
 <script>
-import Page from '@/layouts/Page.vue'
+import PageLayout from '@/layouts/PageLayout.vue'
 
 export default {
+  name: 'NotFound',
   components: {
-    Page,
+    PageLayout,
   },
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <Page class="page--features features-page">
+  <PageLayout class="page--features features-page">
     <h1 class="features-page__heading">Features Page</h1>
     <p class="features-page__about">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis at fugit non debitis
@@ -9,15 +9,16 @@
       repudiandae numquam culpa itaque possimus enim facere vel inventore non est cum, delectus
       accusantium nulla labore ea autem. Nesciunt hic pariatur quia libero.
     </p>
-  </Page>
+  </PageLayout>
 </template>
 
 <script>
-import Page from '@/layouts/Page.vue'
+import PageLayout from '@/layouts/PageLayout.vue'
 
 export default {
+  name: 'Features',
   components: {
-    Page,
+    PageLayout,
   },
 }
 </script>

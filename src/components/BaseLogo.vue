@@ -17,6 +17,12 @@
   </router-link>
 </template>
 
+<script>
+export default {
+  name: 'BaseLogo',
+}
+</script>
+
 <style scoped lang="scss">
 .logo {
   text-align: center;

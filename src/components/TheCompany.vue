@@ -2,21 +2,22 @@
   <section class="company">
     <h2 class="visually-hidden">Our company</h2>
     <header class="company__header">
-      <Navigation />
+      <MainNavigation />
     </header>
 
-    <Logo class="company__logo" />
+    <BaseLogo class="company__logo" />
   </section>
 </template>
 
 <script>
-import Navigation from '@/components/Navigation.vue'
-import Logo from '@/components/Logo.vue'
+import MainNavigation from '@/components/MainNavigation.vue'
+import BaseLogo from '@/components/BaseLogo.vue'
 
 export default {
+  name: 'TheCompany',
   components: {
-    Navigation,
-    Logo,
+    MainNavigation,
+    BaseLogo,
   },
 }
 </script>

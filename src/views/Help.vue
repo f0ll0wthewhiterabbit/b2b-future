@@ -1,20 +1,21 @@
 <template>
-  <Page class="page--help help-page">
+  <PageLayout class="page--help help-page">
     <h1 class="help-page__heading">Help Page</h1>
     <p class="help-page__about">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ex exercitationem rem eos
       facere? Laudantium blanditiis nisi fuga vel voluptate facere saepe molestias, cumque quasi
       mollitia architecto, dolorem et expedita.
     </p>
-  </Page>
+  </PageLayout>
 </template>
 
 <script>
-import Page from '@/layouts/Page.vue'
+import PageLayout from '@/layouts/PageLayout.vue'
 
 export default {
+  name: 'Help',
   components: {
-    Page,
+    PageLayout,
   },
 }
 </script>
