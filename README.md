@@ -1,5 +1,7 @@
 # B2B Future
 
+https://b2b-future.firebaseapp.com
+
 ## Project setup
 
 ```
