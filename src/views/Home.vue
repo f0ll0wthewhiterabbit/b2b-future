@@ -7,12 +7,19 @@
 
     <main class="page__main">
       <h1 class="page__heading">Home Page</h1>
-      <p class="page__about">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, iure. Dolor assumenda
-        delectus perspiciatis natus doloribus tempore, possimus ex facilis a error quas consequuntur
-        eligendi saepe aperiam laborum inventore quisquam.
+
+      <p class="page__about" v-if="name && email">
+        {{ name }}, congratulations! You have successfully registered. All additional information
+        will be sent to {{ email }}.
       </p>
-      <router-link to="/sign-up" class="page__link">Sign Up</router-link>
+      <template v-else>
+        <p class="page__about">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, iure. Dolor
+          assumenda delectus perspiciatis natus doloribus tempore, possimus ex facilis a error quas
+          consequuntur eligendi saepe aperiam laborum inventore quisquam.
+        </p>
+        <router-link to="/sign-up" class="page__link">Sign Up</router-link>
+      </template>
     </main>
   </div>
 </template>
@@ -25,6 +32,27 @@ export default {
   components: {
     Navigation,
     Logo,
+  },
+  data() {
+    return {
+      name: '',
+      email: '',
+    }
+  },
+  created() {
+    if (this.$route.query.name) {
+      this.name = this.$route.query.name
+    }
+
+    if (this.$route.query.email) {
+      this.email = this.$route.query.email
+    }
+  },
+  watch: {
+    $route(to) {
+      this.name = to.query.name ? to.query.name : ''
+      this.email = to.query.email ? to.query.email : ''
+    },
   },
 }
 </script>
