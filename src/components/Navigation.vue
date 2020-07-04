@@ -48,6 +48,7 @@ export default {
   &__list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;

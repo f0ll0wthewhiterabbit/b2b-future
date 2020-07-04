@@ -414,15 +414,15 @@ export default {
     &:focus,
     &:hover {
       border-bottom-color: transparent;
-      background-repeat: no-repeat, no-repeat;
-      background-position: center bottom -2px, center right 16px;
-      background-size: 100% 2px, 15px 8px;
       background-image: linear-gradient(
           to right,
           $gradient-confirm-start 0,
           $gradient-confirm-end 100%
         ),
         url('../assets/images/icons/angle-down.svg');
+      background-repeat: no-repeat, no-repeat;
+      background-position: center bottom -2px, center right 16px;
+      background-size: 100% 2px, 15px 8px;
     }
 
     &--confirmed,
@@ -444,15 +444,15 @@ export default {
       &:active,
       &:focus,
       &:hover {
-        background-repeat: no-repeat, no-repeat;
-        background-position: center bottom -2px, center right 8px;
-        background-size: 100% 2px, 12px 9px;
         background-image: linear-gradient(
             to right,
             $gradient-confirm-start 0,
             $gradient-confirm-end 100%
           ),
           url('../assets/images/icons/confirm.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: center bottom -2px, center right 8px;
+        background-size: 100% 2px, 12px 9px;
       }
     }
 
@@ -463,15 +463,15 @@ export default {
       &:active,
       &:focus,
       &:hover {
-        background-repeat: no-repeat, no-repeat;
-        background-position: center bottom -2px, center right 8px;
-        background-size: 100% 2px, 12px 9px;
         background-image: linear-gradient(
             to right,
             $gradient-error-start 0,
             $gradient-error-end 100%
           ),
           url('../assets/images/icons/alert.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: center bottom -2px, center right 8px;
+        background-size: 100% 2px, 12px 9px;
       }
     }
 

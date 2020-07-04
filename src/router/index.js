@@ -25,6 +25,15 @@ const routes = [
     name: 'Help',
     component: () => import(/* webpackChunkName: "help" */ '../views/Help.vue'),
   },
+  {
+    path: '/404',
+    name: 'NotFound',
+    component: () => import(/* webpackChunkName: "not-found" */ '../views/NotFound.vue'),
+  },
+  {
+    path: '*',
+    redirect: '/404',
+  },
 ]
 
 const router = new VueRouter({

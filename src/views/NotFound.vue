@@ -1,11 +1,7 @@
 <template>
-  <Page class="page--help help-page">
-    <h1 class="help-page__heading">Help Page</h1>
-    <p class="help-page__about">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ex exercitationem rem eos
-      facere? Laudantium blanditiis nisi fuga vel voluptate facere saepe molestias, cumque quasi
-      mollitia architecto, dolorem et expedita.
-    </p>
+  <Page class="page--not-found not-found-page">
+    <h1 class="not-found-page__heading">404</h1>
+    <p class="not-found-page__about">Page Not Found</p>
   </Page>
 </template>
 
@@ -20,7 +16,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.help-page {
+.not-found-page {
   &__heading {
     font-family: 'Muller', sans-serif;
     font-size: 30px;
@@ -40,7 +36,7 @@ export default {
 }
 
 @media (min-width: $tablet-width) {
-  .help-page {
+  .not-found-page {
     &__heading {
       max-width: 50%;
     }

@@ -1,37 +1,28 @@
 <template>
-  <div class="page">
-    <header class="page__header">
-      <Logo />
-      <Navigation />
-    </header>
+  <Page class="page--home home-page">
+    <h1 class="home-page__heading">Home Page</h1>
 
-    <main class="page__main">
-      <h1 class="page__heading">Home Page</h1>
-
-      <p class="page__about" v-if="name && email">
-        {{ name }}, congratulations! You have successfully registered. All additional information
-        will be sent to {{ email }}.
+    <p class="home-page__about" v-if="name && email">
+      {{ name }}, congratulations! You have successfully registered. All additional information will
+      be sent to {{ email }}.
+    </p>
+    <template v-else>
+      <p class="home-page__about">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, iure. Dolor assumenda
+        delectus perspiciatis natus doloribus tempore, possimus ex facilis a error quas consequuntur
+        eligendi saepe aperiam laborum inventore quisquam.
       </p>
-      <template v-else>
-        <p class="page__about">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, iure. Dolor
-          assumenda delectus perspiciatis natus doloribus tempore, possimus ex facilis a error quas
-          consequuntur eligendi saepe aperiam laborum inventore quisquam.
-        </p>
-        <router-link to="/sign-up" class="page__link">Sign Up</router-link>
-      </template>
-    </main>
-  </div>
+      <router-link to="/sign-up" class="home-page__link">Sign Up</router-link>
+    </template>
+  </Page>
 </template>
 
 <script>
-import Navigation from '@/components/Navigation.vue'
-import Logo from '@/components/Logo.vue'
+import Page from '@/layouts/Page.vue'
 
 export default {
   components: {
-    Navigation,
-    Logo,
+    Page,
   },
   data() {
     return {
@@ -58,35 +49,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.page {
-  min-height: 100vh;
-  background-color: $accent;
-  background-image: url('../assets/images/home-bg-mobile.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 65px;
-  }
-
-  &__main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 30px;
-    text-align: center;
-    color: $font-contrast;
-  }
-
+.home-page {
   &__heading {
-    max-width: 50%;
     font-family: 'Muller', sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -95,7 +59,6 @@ export default {
   }
 
   &__about {
-    max-width: 50%;
     margin-bottom: 30px;
     font-family: 'Muller', sans-serif;
     font-size: 16px;
@@ -127,14 +90,14 @@ export default {
 }
 
 @media (min-width: $tablet-width) {
-  .page {
-    background-image: url('../assets/images/home-bg-tablet.jpg');
-  }
-}
+  .home-page {
+    &__heading {
+      max-width: 50%;
+    }
 
-@media (min-width: $desktop-width) {
-  .page {
-    background-image: url('../assets/images/home-bg-desktop.jpg');
+    &__about {
+      max-width: 50%;
+    }
   }
 }
 </style>

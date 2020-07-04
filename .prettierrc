@@ -10,5 +10,5 @@
   "endOfLine": "auto",
   "jsxSingleQuote": false,
   "jsxBracketSameLine": false,
-  "htmlWhitespaceSensitivity": "ignore"
+  "htmlWhitespaceSensitivity": "strict"
 }
